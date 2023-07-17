@@ -1,0 +1,21 @@
+version: 2
+models:
+  - name: dim_cust_nat_reg
+    columns:
+      - name: C_ID
+        description: ''
+      - name: C_NAME
+        description: ''
+      - name: C_CONTACT_DETAIL
+        description: ''
+      - name: C_BALANCE
+        description: ''
+      - name: C_NATION_ID
+        description: ''
+      - name: C_NATION_NAME
+        description: ''
+      - name: C_REGION_ID
+        description: ''
+      - name: C_REGION_NAME
+        description: ''
+sources: []

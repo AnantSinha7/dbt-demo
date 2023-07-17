@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: dim_first_database
+    columns:
+      - name: C_ID
+        description: ''
+        tests:
+          - not_null:
+              config:
+                store_failures: true
+      - name: C_NAME
+        description: ''
+      - name: C_FULLADDRESS
+        description: ''
+      - name: C_PHONE_NO
+        description: ''
+      - name: C_NATION
+        description: ''
+      - name: C_REGION_NAME
+        description: ''
+      - name: C_ACCOUNT_BALANCE
+        description: ''
+sources: []

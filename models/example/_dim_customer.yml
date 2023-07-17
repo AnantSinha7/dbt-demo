@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: dim_customer
+    columns:
+      - name: CUSTOMER_ID
+        description: 'A primary key of the table'
+        tests:
+          - not_null:
+              config:
+                store_failures: true
+

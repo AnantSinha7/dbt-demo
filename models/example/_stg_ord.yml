@@ -1,0 +1,31 @@
+version: 2
+models:
+  - name: stg_ord
+    description: "MODEL order"
+
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - dbt_utils.at_least_one
+        columns:
+          - name: status
+            description: "Check the details of orders table"
+            tests:
+              - accepted_values:
+                values:
+                  - P
+                  - F
+                  - O
+            tags: ['Code Quality']
+      - name: CUSTOMER_ID
+        description: ''
+        tests:
+          - dbt_utils.not_constant
+      - name: ORDER_DATE
+        description: ''
+      - name: STATUS
+        description: ''
+        tests:
+          - dbt_utils.not_constant
+sources: []

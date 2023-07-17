@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: int_order_pivoted
+    columns:
+      - name: ORDER_ID
+        description: ''
+      - name: O_AMT
+        description: ''
+      - name: F_AMT
+        description: ''
+sources: []

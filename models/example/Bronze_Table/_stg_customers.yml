@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: stg_customers
+    columns:
+      - name: CUSTOMER_ID
+        description: ''
+      - name: FULL_NAME
+        description: ''
+      - name: CONTACT
+        description: ''
+      - name: ACCOUNT_BALANCE
+        description: ''
+      - name: NATION_ID
+        description: ''
+sources: []

@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: stg_nations
+    columns:
+      - name: NATION_ID
+        description: ''
+      - name: NATION_NAME
+        description: ''
+      - name: N_REGION_ID
+        description: ''
+sources: []

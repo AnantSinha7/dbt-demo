@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: test
+    columns:
+      - name: CUSTOMER_ID
+        description: 'The primary key for this table'
+        tags:
+          - Code Quality
+      - name: AMOUNT
+        description: ''
+sources: []

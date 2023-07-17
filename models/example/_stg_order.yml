@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: stg_order
+    columns:
+      - name: ORDER_ID
+        description: ''
+      - name: CUSTOMER_ID
+        description: ''
+      - name: ORDER_DATE
+        description: ''
+      - name: AMOUNT
+        description: ''
+      - name: CLIENT_BASED_PRIORITY
+        meta:
+          masking_policy: mp_encrypt_pii
+      - name: STATUS
+        description: ''
+sources: []

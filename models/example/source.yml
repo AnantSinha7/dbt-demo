@@ -1,0 +1,38 @@
+version: 2
+sources:
+  - name: BRONZE_LAYER
+    database: DBT_DEMO
+    schema: BRONZE_LAYER
+    tables:
+      - name: CUSTOMER
+        description: "customer master data"
+      - name: ORDERS
+        description: "Order master data"
+        columns:
+          - name: O_ORDERKEY
+            description: ''
+          - name: O_CUSTKEY
+            description: ''
+          - name: O_ORDERSTATUS
+            description: ''
+          - name: O_TOTALPRICE
+            description: ''
+          - name: O_ORDERDATE
+            description: ''
+          - name: O_ORDERPRIORITY
+            description: ''
+          - name: O_CLERK
+            description: ''
+          - name: O_SHIPPRIORITY
+            description: ''
+          - name: O_COMMENT
+            description: ''
+          - name: UPD_TS
+            description: ''
+      - name: NATION
+        description: "Nation master data"
+      - name: REGION
+        description: "Region master data"
+        freshness:
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 24, period: hour}

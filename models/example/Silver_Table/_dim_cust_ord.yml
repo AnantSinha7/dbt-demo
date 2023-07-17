@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: dim_cust_ord
+    columns:
+      - name: CUSTOMER_ID
+        description: ''
+      - name: FULL_NAME
+        description: ''
+      - name: FIRST_ORDER_DATE
+        description: ''
+      - name: MOST_RECENT_ORDER_DATE
+        description: ''
+      - name: NUMBER_OF_ORDERS
+        description: ''
+sources: []

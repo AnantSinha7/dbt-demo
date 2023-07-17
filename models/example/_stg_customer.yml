@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: stg_customer
+    description: "A Bronze model"
+    tests:
+      - dbt_utils.equal_rowcount:
+          compare_model: ref('dim_customer')
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - not_null
+        tags: ['Code Quality']
+      - name: FULL_NAME
+        description: ''
+      - name: CONTACT
+        description: ''
+      - name: ACCOUNT_BALANCE
+        description: ''
+      - name: NATION_ID
+        description: ''
+sources: []

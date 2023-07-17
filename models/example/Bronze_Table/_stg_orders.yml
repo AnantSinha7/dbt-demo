@@ -1,0 +1,17 @@
+version: 2
+models:
+  - name: stg_orders
+    columns:
+      - name: ORDER_ID
+        description: ''
+      - name: CUSTOMER_ID
+        description: ''
+      - name: ORDER_DATE
+        description: ''
+      - name: AMOUNT
+        description: ''
+      - name: CLIENT_BASED_PRIORITY
+        description: ''
+      - name: STATUS
+        description: ''
+sources: []
